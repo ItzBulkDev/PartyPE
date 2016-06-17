@@ -1,8 +1,8 @@
 <?php
 
-namespace Bounties\Commands;
+namespace PartyPE\Commands;
 
-use Bounties\Main;
+use PartyPE\Main;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\PluginIdentifiableCommand;
