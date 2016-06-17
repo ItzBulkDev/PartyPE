@@ -10,13 +10,13 @@ use pocketmine\Player;
 use pocketmine\utils\TextFormat as TF;
 use pocketmine\utils\Config;
 
-class MainBountyCommand extends BaseCommand {
+class MainPartyCommand extends BaseCommand {
     private $plugin;
     public $config;
     public $player;
 
     /**
-     * MainReportCommand constructor.
+     * MainPartyCommand constructor.
      * @param Main $plugin
      */
     public function __construct(Main $plugin) {
