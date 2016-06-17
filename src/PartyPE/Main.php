@@ -14,8 +14,8 @@ class Main extends P implements L{
         @mkdir($this->getDataFolder());
         @mkdir($this->getDataFolder()."players/");
     }
-    //Start with public function onJoin()?
-    public function onDisable(){ //kys <3
+    
+    public function onDisable(){
         $this->getLogger()->notice("[PartyPE] disabled");
     }
     public function onJoinEvent(PlayerJoinEvent $event){
@@ -27,5 +27,9 @@ class Main extends P implements L{
 				"#-------------#"
 				));
 			$config->save();
+    	}
+    }
+    
+    public function isInParty(Player $player){
     }
 }
