@@ -1,1 +1,5 @@
-
+name: PartyPE
+author: DivictusTeam||Syntaxious
+version: 1.0.0
+api: [2.0.0]
+main: PartyPE\main
