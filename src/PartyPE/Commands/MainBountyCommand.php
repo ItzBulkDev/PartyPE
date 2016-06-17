@@ -1,9 +1,9 @@
 <?php
 
-namespace Bounties\Commands;
+namespace PartyPE\Commands;
 
-use Bounties\Main;
-use Bounties\Commands\BaseCommand;
+use PartyPE\Main;
+use PartyPE\Commands\BaseCommand;
 use pocketmine\command\CommandSender;
 use pocketmine\OfflinePlayer;
 use pocketmine\Player;
