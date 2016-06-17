@@ -2,11 +2,11 @@
 
 namespace PartyPE;
 
-use pocketmine\plugin\PluginBase;
-use pocketmine\event\Listener;
+use pocketmine\plugin\PluginBase as P;
+use pocketmine\event\Listener as L;
 use pocketmine\utils\TextFormat as TF;
 
-class Main extends PluginBase implements Listener{
+class Main extends P implements L{
     
     public function onEnable(){
         $this->getLogger()->notice("[PartyPE] enabled");//notice automatically does aqua I believe
