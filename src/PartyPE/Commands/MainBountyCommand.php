@@ -21,7 +21,7 @@ class MainBountyCommand extends BaseCommand {
      */
     public function __construct(Main $plugin) {
         $this->plugin = $plugin;
-        parent::__construct($plugin, "bounty", "This allows players to set bounties on other players", "/bounty [name] [amount]", ["bountyy", "bount", "bounttyy"]);
+        parent::__construct($plugin, "party", "This allows players to make parties, invite players, etc.", "/party [invite]", ["party", "p", "par"]);
     }
 
     /**
@@ -32,7 +32,7 @@ class MainBountyCommand extends BaseCommand {
     public function execute(CommandSender $sender, $commandLabel, array $args)
     {
         if($sender instanceof Player){
-            if(count($args) < 2 ){
+            if(count($args) < 1 ){
                 $sender->sendMessage(TF::RED.'Usage: '. $this->getUsage());
                 return false;
             }
@@ -44,8 +44,6 @@ class MainBountyCommand extends BaseCommand {
                     return false;
                 }
                 $pname = $player->getName();
-                $amount = $args[1];
-                $this->plugin->addBounty($sender, $player, $amount);
         }
         else {
             $sender->sendMessage(TF::RED."Run this command in-game!");
