@@ -14,7 +14,7 @@ class Main extends P implements L{
         @mkdir($this->getDataFolder());
     }
     //Start with public function onJoin()?
-    public function onEnable(){
+    public function onDisable(){ //bad mistake irish xd
         $this->getLogger()->notice("[PartyPE] disabled");
     }
 }
