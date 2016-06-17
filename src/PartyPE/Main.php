@@ -15,6 +15,6 @@ class Main extends P implements L{
     }
     //Start with public function onJoin()?
     public function onEnable(){
-        $this->getLogger()->notice("[PartyPE] disabled");//notice automatically does aqua I believe
+        $this->getLogger()->notice("[PartyPE] disabled");
     }
 }
