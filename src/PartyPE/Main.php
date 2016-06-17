@@ -13,4 +13,5 @@ class Main extends PluginBase implements Listener{
         $this->getServer()->getPluginManager()->registerEvents($this,$this);
         @mkdir($this->getDataFolder());
     }
+    //Start with public function onJoin()?
 }
