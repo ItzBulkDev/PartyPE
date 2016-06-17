@@ -12,6 +12,7 @@ class Main extends P implements L{
         $this->getLogger()->notice("[PartyPE] enabled");//notice automatically does aqua I believe
         $this->getServer()->getPluginManager()->registerEvents($this,$this);
         @mkdir($this->getDataFolder());
+        @mkdir($this->getDataFolder()."players/");
     }
     //Start with public function onJoin()?
     public function onDisable(){ //kys <3
