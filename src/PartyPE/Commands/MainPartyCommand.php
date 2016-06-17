@@ -40,8 +40,18 @@ class MainPartyCommand extends BaseCommand {
                 $sname = $sender->getName();
                 $player = $this->plugin->getServer()->getPlayer($args[0]);
                 if(!$player){
-                    $sender->sendMessage(TF::RED.' That player is not online!');
+                    $sender->sendMessage(TF::RED.'That player is not online!');
                     return false;
+                }
+                if($this->plugin->getParty($player)){
+                    $sender->sendMessage(TF::RED."That player is already in a party!");
+                    return false;
+                }
+                if($this->plugin->isInParty($sender)){
+                    if($this->plugin->getRank($sender) != "leader"){
+                        $sender->sendMessage(TF::RED."Only the leader can invite people!");
+                        return false;
+                    }
                 }
                 $pname = $player->getName();
         }
