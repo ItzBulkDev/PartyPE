@@ -23,7 +23,7 @@ class Main extends P implements L{
         if (!file_exists($this->getDataFolder()."players/".$event->getPlayer()->getName().".yml")){
 			$config = new Config($this->getDataFolder()."players/".strtolower($ev->getPlayer()->getName()).".yml", Config::YAML, array(
 				"#---PartyPE---#",
-				"members": array(),
+				"members" => [],
 				"#-------------#"
 				));
 			$config->save();
